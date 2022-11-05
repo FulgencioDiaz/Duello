@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-
-    <script src="funcheusuarios.js"></script>
+    
+    <link rel="stylesheet" href="funchemystyle.css">
+ 
+  
     <title>Duello</title>
+
+    
 </head>
 <body>
     
-    <h1>Equipo gitanito</h1>
-    <h2>pruebas pruebinas</h2>
+    <h1>Prueba semillas usuario</h1>
+    <h2>Prueba user y pass</h2>
 <div id="formLogin">
-    <input id="email" type="email">
-    <input id="password" type="password">
+    email<input id="email" type="email">
+   password <input id="password" type="password">
+    rol<input id="rol" type="rol" multiple name="rol" list="rol-option">
+
+    <datalist id="rol-option">
+    <option value="trabajador">trabajador</option>
+    <option value="admin">admin</option>
+ 
+    </datalist>
 
     <button id="login">Login</button>
 </div>
     <script src="funchescript.js"></script>
 
     <button id="deslogear" style="display: none;">deslogear</button>
-
-
-
+    <script src="funcheusuarios.js"></script>
 </body>
 </html>

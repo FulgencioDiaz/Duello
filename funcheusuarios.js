@@ -53,12 +53,13 @@ document.getElementById("deslogear").onclick = function() {
         console.log(allUsers)
         const email = document.querySelector('#email')
         const password = document.querySelector('#password')
+        const rol = document.querySelector('#rol')
         const loginBtn = document.querySelector('#login')
 
         
         loginBtn.onclick = function() {
 
-            const currentUser = allUsers.filter(user => user.email === email.value && user.password === password.value)
+            const currentUser = allUsers.filter(user => user.email === email.value && user.password === password.value && user.rol === rol.value)
 
             
 
